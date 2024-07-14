@@ -157,7 +157,7 @@ function getWeatherDetails(name, lat, lon, country, state) {
         });
 
     fetch(FORECAST_API_URL).then(res => res.json()).then(forecastData => {
-        let hourlyForecast = forecastData.list.slice(0, 8); // Get next 8 hourly forecasts
+        let hourlyForecast = forecastData.list.slice(0, 8); 
         hourlyForecastCard.innerHTML = ``;
         hourlyForecast.forEach(forecast => {
             let hrForecastDate = new Date(forecast.dt_txt);
