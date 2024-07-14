@@ -391,6 +391,14 @@ hr {
         grid-template-columns: repeat(3, 1fr);
 
     }
+@media(max-width: 425px) {
+    .weather-data .weather-right .hourlyweather{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+}
 
 
 }
