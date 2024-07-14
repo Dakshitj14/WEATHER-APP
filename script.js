@@ -182,7 +182,7 @@ function getWeatherDetails(name, lat, lon, country, state) {
                 return true;
             }
             return false;
-        }).slice(1, 6); // Get next 5 unique days excluding the current day
+        }).slice(1, 6);
 
         sevenDaysForecastCard.innerHTML = '';
 
